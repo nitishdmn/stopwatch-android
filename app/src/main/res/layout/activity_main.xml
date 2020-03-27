@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ivSplash"
+        android:layout_width="500dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icget"
+        app:layout_constraintBottom_toTopOf="@+id/tvsubSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/tvSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:text="Stopwatch"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSplash"
+        app:layout_constraintStart_toStartOf="@+id/tvsubSplash"/>
+
+    <TextView
+        android:id="@+id/tvsubSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="By Nitish Dhiman"
+        android:textColor="#A3A2AD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSplash"/>
+
+    <Button
+        android:id="@+id/btnget"
+        android:layout_width="262dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bgbtngreen"
+        android:text="Get Started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsubSplash"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
